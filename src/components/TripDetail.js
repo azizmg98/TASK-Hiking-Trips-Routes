@@ -1,5 +1,6 @@
 import React from 'react';
 import tripsData from '../tripsData';
+// import {useParams} from "react-router-dom"
 
 function TripDetail() {
   const trip = tripsData[0];

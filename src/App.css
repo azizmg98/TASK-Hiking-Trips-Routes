@@ -270,6 +270,10 @@ a:not([href]):not([class]):hover {
   text-decoration: none;
 }
 
+a:active{
+  text-decoration: underline;
+}
+
 pre,
 code,
 kbd,
@@ -4271,6 +4275,7 @@ fieldset:disabled .btn {
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: #1abc9c;
+  text-decoration: underline;
 }
 
 .nav-fill > .nav-link,
