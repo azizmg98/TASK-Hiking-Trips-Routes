@@ -1,9 +1,17 @@
 import React from 'react';
 import tripsData from '../tripsData';
-// import {useParams} from "react-router-dom"
+import {useParams} from "react-router-dom";
+import {navigate} from 'react-router-dom';
 
 function TripDetail() {
-  const trip = tripsData[0];
+  // useParam searches URL parameteres (Home/itemList/:param) anything after : is a param
+  const { slug } = useParams();
+  // declare variable trip > find ??????
+  const trip = tripsData.find((trip) => trip.slug === slug);
+  // if (!trip){
+  //   <navigate />
+  // }
+
   return (
     <div class="modal-dialog modal-xl">
       <div class="modal-content">

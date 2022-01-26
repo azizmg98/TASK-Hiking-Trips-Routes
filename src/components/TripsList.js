@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import tripsData from '../tripsData';
 import SearchBar from './SearchBar';
 import TripItem from './TripItem';
+import {Navigate} from 'react-router-dom'
 
 function TripsList() {
   const [query, setQuery] = useState('');
